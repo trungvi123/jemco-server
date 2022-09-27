@@ -11,7 +11,7 @@ env.config();
 
 const app = express();
 let PORT = process.env.PORT || 6000; // add your port
-const URI = process.env.URI_BASE; // add your URI
+let URI = process.env.URI_BASE; // add your URI
 
 // ADMIN_KEY_SIGNUP = 'admin@admin.ctu.edu.vn' cần thêm adminKey khi thêm 1 admin
 app.use(bodyParser.json({ limit: "30mb" }));
