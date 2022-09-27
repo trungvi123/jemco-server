@@ -22,7 +22,10 @@ app.use("/admin", adminRouter);
 app.use("/user", userRouter);
 
 mongoose
-  .connect('mongodb+srv://admin:WU8NlSUsgXUyK3Tx@cluster0.42rmswo.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(
+    "mongodb+srv://admin:uh02hELNXTJYuW88@cluster0.ohupeby.mongodb.net/?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  )
   .then(() => {
     app.listen(PORT, () => {
       console.log("SERVER RUN");
